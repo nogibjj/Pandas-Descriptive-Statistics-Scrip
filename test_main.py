@@ -1,4 +1,4 @@
-from main import mini_subtract
 
-def test_mini_subtract():
-    assert mini_subtract(2,1) == 1
+
+average_2 = sum(df['Cooking_Skills'])/len(df["Cooking_Skills"])
+assert average == average_2

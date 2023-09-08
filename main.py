@@ -1,10 +1,10 @@
 import pandas as pd
 
 ###Descriptive Stats
-def computation (data):
-    average = data["Cooking_Skills"].mean()
-    medium = data["Cooking_Skills"].median()
-    #counts = data["Cooking_Skills"].mode()
+def computation (dataframe):
+    average = dataframe["Cooking_Skills"].mean()
+    medium = dataframe["Cooking_Skills"].median()
+    #counts = dataframe["Cooking_Skills"].mode()
     return (average,medium)
 
 

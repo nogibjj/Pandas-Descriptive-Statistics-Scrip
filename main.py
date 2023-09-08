@@ -9,8 +9,8 @@ df = pd.DataFrame(data)
 df.describe()
 
 #Descriptive Stats
-average = df.['Cooking_Skills'].mean()
-medium = df.['Cooking_Skills'].median()
+average = df['Cooking_Skills'].mean()
+medium = df['Cooking_Skills'].median()
 counts = df['Cooking_Skills'].value_counts()
 
 if __name__ == '__main__':

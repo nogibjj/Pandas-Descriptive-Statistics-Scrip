@@ -1,4 +1,4 @@
-import main
+from main import computation
 import pandas as pd
 
 data = {"Name": ["Simrun", "Rakeen", "Javier"], "Cooking_Skills": [1000, 300, 5000]}
@@ -6,4 +6,4 @@ data = {"Name": ["Simrun", "Rakeen", "Javier"], "Cooking_Skills": [1000, 300, 50
 df = pd.DataFrame.from_dict(data)
     
 
-assert main.computation(df) == (2100.0,1000.0)
+assert computation(df) == (2100.0,1000.0)

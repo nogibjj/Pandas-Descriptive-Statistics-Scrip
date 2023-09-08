@@ -1,4 +1,3 @@
 import main
 
-average_2 = sum(df['Cooking_Skills'])/len(df["Cooking_Skills"])
-assert average == average_2
+assert computation(df) == (2100.0,1000.0)

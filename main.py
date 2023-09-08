@@ -9,10 +9,10 @@ def computation (dataframe):
     return (average,medium)
 
 
-if __name__ == "__main__":
-    data = {"Name": ["Simrun", "Rakeen", "Javier"], "Cooking_Skills": [1000, 300, 5000]}
-# print(data)
-df = pd.DataFrame.from_dict(data)
+# if __name__ == "__main__":
+#     data = {"Name": ["Simrun", "Rakeen", "Javier"], "Cooking_Skills": [1000, 300, 5000]}
+# # print(data)
+# df = pd.DataFrame.from_dict(data)
     
-x  = computation (df)
-print (x)
+# x  = computation (df)
+# print (x)

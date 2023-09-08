@@ -1,4 +1,5 @@
 import main
+import pandas as pd
 
 data = {"Name": ["Simrun", "Rakeen", "Javier"], "Cooking_Skills": [1000, 300, 5000]}
 # print(data)

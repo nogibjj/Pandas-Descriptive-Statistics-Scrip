@@ -1,7 +1,7 @@
 {
   "name": "Python Development Container",
   "build": {
-		"dockerfile": "Dockerfile",
+		"dockerfile": "DockerFile",
 		"context": ".."
 	},
 
@@ -49,6 +49,8 @@
     	"remoteUser": "rmr_code",
 
 	"overrideCommand": false,
+
+	"mounts": ["source=codespaces-linux-var-lib-docker,target=/var/lib/docker,type=volume"],
 
 	"runArgs": [
 		"--cap-add=SYS_PTRACE",

@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 ###Descriptive Stats
 def computation (dataframe):
     average = dataframe["Cooking_Skills"].mean()

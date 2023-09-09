@@ -27,5 +27,5 @@ def test_computation():
   
     assert result == (expected_mean, expected_median, expected_standard_dev)
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     pytest.main()

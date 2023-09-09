@@ -27,8 +27,11 @@ plt.show()
 #Function created to understand the descriptive statistices for the dataset of WorldBank Indicators
 def computation (dataframe):
     average = dataframe["Log GDP Per Capita"].mean()
+    average = round(average,10)
     medium = dataframe["Log GDP Per Capita"].median()
+    medium = round(medium,10)
     std_dev = dataframe["Log GDP Per Capita"].std()
+    std_dev = round(std_dev,2)
     return (average,medium,std_dev)
 
 #Calling the function

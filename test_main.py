@@ -12,7 +12,8 @@ def test_computation():
     "media/nickeubank/MIDS_Data/"
     "master/World_Development_Indicators/wdi_small_tidy_2015.csv"
 )
-
+    wdi["Log GDP Per Capita"] = np.log(wdi["GDP per capita (constant 2010 US$)"])
+    
     result = computation(wdi)
     expected_mean = sum(wdi["Log GDP Per Capita"])/len(wdi["Log GDP Per Capita"])
     

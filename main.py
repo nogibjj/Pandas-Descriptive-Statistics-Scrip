@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import seaborn.objects as sb
+import matplotlib.pyplot as plt
 
 
 #Loading Dataset
@@ -21,7 +22,7 @@ chart = (sb.Plot(wdi, x= "Log GDP Per Capita", y="Mortality rate, under-5 (per 1
 )
 
 #Display of the chart
-chart
+plt.show(chart)
 
 #Function created to understand the descriptive statistices for the dataset of WorldBank Indicators
 def computation (dataframe):

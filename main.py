@@ -16,7 +16,7 @@ wdi["Log GDP Per Capita"] = np.log(wdi["GDP per capita (constant 2010 US$)"])
 
 #Visualizing the data representation of the relationship between the two variables. 
 chart = (sb.Plot(wdi, x= "Log GDP Per Capita", y="Mortality rate, under-5 (per 1,000 live births)") 
-.add(sb.Line(), sb.PolyFit(2)) 
+.add(sb.Line(), sb.PolyFit(1)) 
 .add(sb.Dot())
 .label(title = "Analysis of Log Gdp Per Capita and Infant Mortality Rate")
 )

@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 import seaborn.objects as sb
+import seaborn as sns
+import matplotlib.pyplot as plt
+
 
 
 
@@ -15,12 +18,12 @@ wdi = pd.read_csv(
 wdi["Log GDP Per Capita"] = np.log(wdi["GDP per capita (constant 2010 US$)"])
 
 #Visualizing the data representation of the relationship between the two variables. 
-chart = (sb.scatterplot(wdi, x= "Log GDP Per Capita", y="Mortality rate, under-5 (per 1,000 live births)")
+chart = (sns.scatterplot(wdi, x= "Log GDP Per Capita", y="Mortality rate, under-5 (per 1,000 live births)")
          .set(title = "Analysis of Log Gdp Per Capita and Infant Mortality Rate")
 )
 
 #Display of the chart
-chart.show()
+plt.show()
 
 #Function created to understand the descriptive statistices for the dataset of WorldBank Indicators
 def computation (dataframe):

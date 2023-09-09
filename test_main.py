@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import seaborn.objects as sb
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 
 def test_computation():

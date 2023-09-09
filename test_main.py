@@ -10,7 +10,8 @@ def test_computation():
     wdi = pd.read_csv(
     "https://media.githubusercontent.com/"
     "media/nickeubank/MIDS_Data/"
-    "master/World_Development_Indicators/wdi_small_tidy_2015.csv")
+    "master/World_Development_Indicators/wdi_small_tidy_2015.csv"
+)
 
     result = computation(wdi)
     expected_mean = sum(wdi["Log GDP Per Capita"])/len(wdi["Log GDP Per Capita"])

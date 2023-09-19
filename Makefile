@@ -8,7 +8,10 @@ test:
 format:	
 	black *.py 
 
+deploy:
+	#deploy goes here
+
 lint:
 	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
 		
-all: install lint format test 
+all: install lint deploy format test 
